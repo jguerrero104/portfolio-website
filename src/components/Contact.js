@@ -35,7 +35,7 @@ const Contact = () => {
         <div className="mb-4">
           <h2 className="text-3xl font-bold mb-2">Additional Resources</h2>
           <p className="text-accent hover:underline mb-2">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/resume-JoseGuerrero.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </p>
           <p className="text-accent hover:underline">
             <a href="https://github.com/jguerrero104/portfolio-website" target="_blank" rel="noopener noreferrer">This website's repository</a>
