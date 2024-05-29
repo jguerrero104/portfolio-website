@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/neont/AppData/Local/Temp/28a58d75-4941-407a-8b00-e484ddf217dd_Assignment04_Jose_Guerrero_ybb104.zip.7dd/Assignment04_Jose_Guerrero_ybb104",
+      "program": "c:/Users/neont/AppData/Local/Temp/28a58d75-4941-407a-8b00-e484ddf217dd_Assignment04_Jose_Guerrero_ybb104.zip.7dd/Assignment04_Jose_Guerrero_ybb104/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
