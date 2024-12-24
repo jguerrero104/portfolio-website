@@ -1,54 +1,116 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Home = () => {
+  const [isOtherOpen, setIsOtherOpen] = useState(false);
   return (
-    <div className="text-center p-4 bg-primary text-white min-h-screen flex flex-col items-center">
+    <div className="text-center p-4 bg-gray-900 text-white min-h-screen flex flex-col items-center">
       <h1 className="text-5xl font-bold mb-4">Welcome to my portfolio</h1>
       <p className="text-2xl mb-6">Hello, I'm Jose Guerrero.</p>
+      <div className="flex space-x-4 mb-6">
+        <Link to="/projects" className="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-slate-600 ">View My Projects</Link>
+        <a href="/resume.pdf" target="_blank" className="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-slate-600">Download Resume</a>
+      </div>
+
       
       {/* Introduction Section*/}
-      <div className="mb-6 flex flex-col items-center">
-        <img src="/images/picofMe.jpg" alt="Jose Guerrero" className="h-80 w-70 rounded-full mb-4" />
+      <div className="mb-12 flex flex-col items-center">
+        <img src="/images/picofMe.jpg" alt="Jose Guerrero" className="h-96 w-96 rounded-full shawdow-lg border-4 border-gray-100 object-cover" />
         <p className="text-lg max-w-xl mx-auto leading-relaxed">
-          I'm a developer based in San Antonio, Texas, graduating from UTSA with a degree in Computer Science in December 2024. I specialize in full-stack web development, with experience in both front-end and back-end technologies.
+          I'm a developer based in San Antonio, Texas, I graduated from UTSA with a degree in Computer Science in December 2024. I specialize in full-stack web development, with experience in both front-end and back-end technologies.
         </p>
       </div>
 
-      {/* Skills Section */}
-      <div className="mb-6 w-full max-w-3xl">
+       {/* Skills Section */}
+       <div className="mb-6 w-full max-w-3xl">
         <h2 className="text-3xl font-bold mb-4">Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg">
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>Java</span>
-          <span>Git</span>
-          <span>Node.js</span>
-          <span>Express</span>
-          <span>MySQL</span>
-          <span>C</span>
-          <span>AWS</span>
-          <span>Nginx</span>
-          <span>Unity</span>
-          <span>C#</span>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-lg">
+          <div>
+            <h3 className="font-semibold mb-2">Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>Angular</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">DevOps</h3>
+            <ul>
+              <li>AWS</li>            
+              <li>GCP</li>
+              <li>Nginx</li>
+              <li>Azure</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Other</h3>
+            <ul>
+              {isOtherOpen ? (
+                <>
+                  <li>Git</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Linux</li>
+                  <li>Unity</li>
+                  <li>C#</li>
+                  <li>C</li>
+                  <li>
+                    <button
+                      className="text-gray-700 hover:underline mt-2"
+                      onClick={() => setIsOtherOpen(false)}
+                    >
+                      Show Less
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li>Git</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>
+                    <button
+                      className="text-gray-700 hover:underline mt-2"
+                      onClick={() => setIsOtherOpen(true)}
+                    >
+                      Show More
+                    </button>
+                  </li>
+                </>
+              )}
+            </ul>
+          </div>
         </div>
       </div>
+
+
 
       {/* Featured Projects Section */}
       <div className="mb-6 w-full max-w-3xl">
         <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
         <div className="flex flex-wrap justify-center">
-          <Link to="/projects" className="bg-secondary p-4 m-2 rounded-lg hover:bg-secondary-light w-60">
-            <h3 className="text-xl font-semibold">Runner Bay</h3>
-            <p>A fullstack web application that acts as a marketplace for UTSA students to buy and sell items.</p>
+          <Link to="/projects" className="bg-gray-800 p-4 m-2 rounded-lg hover:bg-slate-600 w-60">
+            <h3 className="text-xl font-semibold">Tech Assure</h3>
+            <p>A MERN stack web application made with 6 group members as part of our User Interfaces final project. It serves as a mock e-commerce Electronics Store.</p>
           </Link>
-          <Link to="/projects" className="bg-secondary p-4 m-2 rounded-lg hover:bg-secondary-light w-60">
-            <h3 className="text-xl font-semibold">Pizza Guy Game</h3>
-            <p>2D pixel art game where you play as a pizza delivery guy.</p>
+          <Link to="/projects" className="bg-gray-800 p-4 m-2 rounded-lg hover:bg-slate-600 w-60">
+            <h3 className="text-xl font-semibold">Cloud Migration Plan</h3>
+            <p>A 20-page mirgation plan for a business to move their proprietary hardware onto the cloud, worked on with my classmates in my Cloud Computing class.</p>
           </Link>
-          <Link to="/projects" className="bg-secondary p-4 m-2 rounded-lg hover:bg-secondary-light w-60">
-            <h3 className="text-xl font-semibold">CPU Scheduler</h3>
-            <p>A CPU scheduler simulator using FIFO, SJF, and PR algorithms.</p>
+          <Link to="/projects" className="bg-gray-800 p-4 m-2 rounded-lg hover:bg-slate-600 w-60">
+            <h3 className="text-xl font-semibold">Clothing Co Database Mangement System</h3>
+            <p>This project is a MySQL relational database made for managing a clothing company's operations.</p>
           </Link>
         </div>
       </div>
@@ -56,7 +118,7 @@ const Home = () => {
       {/* Contact Section */}
       <div className="mb-6 w-full max-w-3xl">
         <h2 className="text-3xl font-bold mb-4">Contact</h2>
-        <p className="text-lg">If you’d like to get in touch, feel free to <Link to="/contact" className="text-accent hover:underline">contact me</Link>.</p>
+        <p className="text-lg">If you’d like to get in touch, feel free to <Link to="/contact" className="text-red-500 hover:underline">contact me</Link>.</p>
       </div>
 
       {/* Follow Me Section */}
