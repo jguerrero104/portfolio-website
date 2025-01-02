@@ -10,7 +10,7 @@ const Home = () => {
       <p className="text-2xl mb-6">Hello, I'm Jose Guerrero.</p>
       <div className="flex space-x-4 mb-6">
         <Link to="/projects" className="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-slate-600 ">View My Projects</Link>
-        <a href="/resume.pdf" target="_blank" className="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-slate-600">Download Resume</a>
+        <a href="/JoseGuerreroResume2025.pdf" target="_blank" className="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-slate-600">Download Resume</a>
       </div>
 
       
