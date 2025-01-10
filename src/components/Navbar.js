@@ -35,9 +35,13 @@ const Navbar = () => {
 
         {/* Links for Larger Screens */}
         <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } md:flex space-x-4 text-white text-lg`}
+        className={`
+          ${isOpen ? "block" : "hidden"} 
+          md:flex 
+          flex-col md:flex-row 
+          space-y-4 md:space-y-0 md:space-x-4 
+          text-white text-lg
+        `}
         >
           <Link
             to="/"
