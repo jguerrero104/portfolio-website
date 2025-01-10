@@ -22,7 +22,7 @@ const Projects = () => {
             <img
               src={project.images[0]}
               alt={project.name}
-              className="rounded-lg w-full h-fill object-cover"
+              className="rounded-lg w-full aspect-video object-cover"
             />
             <h3 className="text-xl font-semibold mt-4">{project.name}</h3>
           </div>

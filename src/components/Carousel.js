@@ -68,7 +68,7 @@ const Carousel = ({ project, onClose }) => {
               rel="noopener noreferrer"
               className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600"
             >
-              Live Demo
+              PDF
             </a>
           )}
         </div>

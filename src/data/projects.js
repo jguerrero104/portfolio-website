@@ -1,8 +1,8 @@
 const projects = [
   {
     name: 'Tech Assure',
-    description: 'A comprehensive application that implements advanced features to enhance the cyber assurance process. Designed to streamline assessments and provide actionable insights into organizational security. Built with Python and Flask.',
-    githubLink: 'https://github.com/jguerrero104/TechAssure',
+    description: 'A web application that allows users to search for tech products and compare prices from different retailers. Built with React, Node.js, Express, and MongoDB. I was responsible for the front-end and back-end development of the application. I implemented the search functionality, product listing, and product detail pages. I also implemented the user authentication and registration system. On the back-end, I implemented the search functionality, product listing, and product detail pages',
+    githubLink: 'https://github.com/jguerrero104/UI-Group-6-Project',
     images: [
       '/images/TechAssure1.png',
       '/images/TechAssure2.png',
@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'Clothing Co Database',
     description: 'A fully fleshed MySQL relational database designed to manage the operations of a clothing company. Includes entity-relationship diagrams, data dictionaries, and normalization processes to support inventory, sales, and supplier management.',
-    githubLink: 'https://github.com/jguerrero104/ClothingCo-Database',
+    githubLink: null,
     images: [
       '/images/ClothingCo1.png',
       '/images/ClothingCo2.png',
@@ -21,14 +21,16 @@ const projects = [
     ],
   },
   {
-    name: 'Cloud Security Write-Up',
-    description: 'A detailed report and write-up on a defense-in-depth approach to secure cloud environments, focusing on detecting and mitigating adversary actions like Volt Typhoon. Includes strategies for SOC operations and threat hunting in cloud infrastructure.',
+    name: 'Cloud Migration Plan',
+    description: 'A comprehensive cloud migration plan focusing on transitioning enterprise workloads to a secure and scalable cloud environment. This document outlines migration strategies, risk assessments, and cost optimization techniques, tailored to meet organizational needs.',
     githubLink: null,
+    websiteLink: '/Cloud_Migration_Plan.pdf', 
     images: [
-      '/images/CloudWriteup1.png',
-      '/images/CloudWriteup2.png',
+      '/images/CloudMigration1.png',
+      '/images/CloudMigration2.png',
     ],
   },
+  
   {
     name: 'Runner Bay',
     description: 'A marketplace for UTSA students to buy and sell items. Built with React, Node.js, Express, and MySQL. This application was made as a final project for a Software Engineering course where we followed the Agile methodology. We had scrum meetings, sprint planning, and retrospectives. In our team of 4 developers, I was the lead developer and was responsible for the front-end and back-end development for the Listing page along with login and registration, user authentication. On the delopement side, I was responsible for the deployment of the application on AWS EC2 and RDS.',

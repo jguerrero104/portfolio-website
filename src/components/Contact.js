@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="container mx-auto p-8 bg-primary text-white min-h-screen">
+    <div className="container mx-auto p-8 bg-gray-900 text-white min-h-screen">
       <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
       <div className="text-lg mb-8">
         <p className="mb-4">Feel free to reach out to me through any of the following channels:</p>
@@ -35,7 +35,7 @@ const Contact = () => {
         <div className="mb-4">
           <h2 className="text-3xl font-bold mb-2">Additional Resources</h2>
           <p className="text-accent hover:underline mb-2">
-            <a href="/resume-JG.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/JoseGuerreroResume2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </p>
           <p className="text-accent hover:underline">
             <a href="https://github.com/jguerrero104/portfolio-website" target="_blank" rel="noopener noreferrer">This website's repository</a>

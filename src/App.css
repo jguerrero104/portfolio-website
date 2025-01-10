@@ -13,7 +13,6 @@
   }
 }
 
-/* Define a custom gradient background */
 .bg-custom-gradient {
   background: linear-gradient(to bottom, #1a202c, #2d3748, #000000);
   color: white;
@@ -21,7 +20,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34
   min-height: 100vh;
   display: flex;
   flex-direction: column;

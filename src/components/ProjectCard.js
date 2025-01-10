@@ -11,7 +11,7 @@ const ProjectCard = ({ project, onClick }) => {
         <img
           src={project.images[0]}
           alt={project.name}
-          className="max-h-full max-w-full object-contain rounded-lg"
+          className="max-h-full max-w-full object-cover rounded-lg"
         />
       </div>
       {/* Project Title */}
